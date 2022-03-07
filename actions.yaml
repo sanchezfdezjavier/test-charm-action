@@ -1,0 +1,12 @@
+# Copyright 2022 Ubuntu
+# See LICENSE file for licensing details.
+#
+# Learn more about actions at: https://juju.is/docs/sdk/actions
+
+fortune:
+  description: Returns a pithy phrase.
+  params:
+    fail:
+      description: "Fail with this message"
+      type: string
+      default: ""
