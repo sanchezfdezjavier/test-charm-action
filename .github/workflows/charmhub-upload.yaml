@@ -14,11 +14,11 @@ jobs:
     name: Release to edge
     runs-on: ubuntu-latest
     steps:
-      - name: Get branches
-        run: git branch
-
       - name: Checkout
         uses: actions/checkout@v2
+
+      - name: Get branches
+        run: git branch
 
       - name: Check libraries
         uses: ./charming-actions/check-libraries
