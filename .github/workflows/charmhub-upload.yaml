@@ -17,9 +17,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Get branches
-        run: git branch
-
       - name: Check libraries
         uses: ./charming-actions/check-libraries
         with:
